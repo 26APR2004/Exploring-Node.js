@@ -1,0 +1,15 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+contract CountDigits
+{
+    function CountD(uint256 n)public pure returns(uint256)
+    {
+        require(n>0,"Input must be positive Intger");
+        uint256 count=0;
+        while(n>0){
+              count+=1;
+              n=n/10;
+        }
+        return count;
+    }
+}
